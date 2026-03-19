@@ -2,7 +2,12 @@ import Link from "next/link";
 import { getSiteConfig } from "@/lib/data";
 
 export default async function HowItWorks() {
-  const siteData = await getSiteConfig();
+  let siteData = null;
+  try {
+    siteData = await getSiteConfig();
+  } catch {
+    // DB unavailable — render empty section
+  }
   const steps = siteData?.steps ?? [];
 
   return (

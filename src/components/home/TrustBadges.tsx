@@ -1,7 +1,12 @@
 import { getSiteConfig } from "@/lib/data";
 
 export default async function TrustBadges() {
-  const siteData = await getSiteConfig();
+  let siteData = null;
+  try {
+    siteData = await getSiteConfig();
+  } catch {
+    // DB unavailable — render empty section
+  }
   const trustBadges = siteData?.trustBadges ?? [];
   const stats = siteData?.stats ?? [];
 

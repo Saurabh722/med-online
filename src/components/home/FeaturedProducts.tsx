@@ -1,9 +1,15 @@
 import Link from "next/link";
 import { getFeaturedProducts } from "@/lib/data";
 import ProductCard from "@/components/products/ProductCard";
+import type { ProductData } from "@/types";
 
 export default async function FeaturedProducts() {
-  const featured = (await getFeaturedProducts()).slice(0, 6);
+  let featured: ProductData[] = [];
+  try {
+    featured = (await getFeaturedProducts()).slice(0, 6);
+  } catch {
+    // DB unavailable — render empty section
+  }
 
   return (
     <section className="py-20 bg-gray-50">

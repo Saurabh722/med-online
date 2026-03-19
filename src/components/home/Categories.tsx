@@ -2,7 +2,12 @@ import Link from "next/link";
 import { getAllCategories } from "@/lib/data";
 
 export default async function Categories() {
-  const categories = await getAllCategories();
+  let categories: Awaited<ReturnType<typeof getAllCategories>> = [];
+  try {
+    categories = await getAllCategories();
+  } catch {
+    // DB unavailable — render empty section
+  }
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

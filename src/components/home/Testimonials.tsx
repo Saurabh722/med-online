@@ -1,7 +1,12 @@
 import { getAllTestimonials } from "@/lib/data";
 
 export default async function Testimonials() {
-  const testimonials = await getAllTestimonials();
+  let testimonials: Awaited<ReturnType<typeof getAllTestimonials>> = [];
+  try {
+    testimonials = await getAllTestimonials();
+  } catch {
+    // DB unavailable — render empty section
+  }
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
