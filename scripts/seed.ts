@@ -430,6 +430,38 @@ const siteConfigData = {
       { name: "Sleep", slug: "sleep" },
     ],
   },
+  appearance: {
+    logo: { letter: "M", primaryText: "Med", accentText: "Online" },
+    meta: {
+      title: "MedOnline — Modern Healthcare Delivered to Your Door",
+      description: "Consult licensed physicians online and get FDA-approved prescriptions for weight loss, men\u2019s health, women\u2019s health, skincare, and more. Fast, private, affordable.",
+      keywords: "telehealth, online pharmacy, weight loss, men's health, women's health, skincare, prescription delivery",
+    },
+    header: {
+      ctaLinks: [{ label: "All Products", href: "/products" }],
+      ctaButton: { label: "Get Started", href: "/get-started" },
+    },
+    footer: {
+      description: "Personalized, evidence-based healthcare delivered to your door. Licensed physicians. FDA-approved treatments.",
+      companyLinks: [
+        { label: "About Us", href: "#" },
+        { label: "How It Works", href: "#" },
+        { label: "Careers", href: "#" },
+        { label: "Press", href: "#" },
+        { label: "Blog", href: "#" },
+        { label: "Contact Us", href: "#" },
+      ],
+      supportLinks: [
+        { label: "Help Center", href: "#" },
+        { label: "Privacy Policy", href: "#" },
+        { label: "Terms of Service", href: "#" },
+        { label: "HIPAA Notice", href: "#" },
+        { label: "Accessibility", href: "#" },
+        { label: "Sitemap", href: "#" },
+      ],
+      copyright: `\u00a9 ${new Date().getFullYear()} MedOnline, Inc. All rights reserved.`,
+    },
+  },
 };
 
 // ─── Schemas (inline for the script) ─────────────────────────────────────────
@@ -437,7 +469,7 @@ const siteConfigData = {
 const CategorySchema = new mongoose.Schema({ id: String, name: String, slug: String, description: String, icon: String, color: String, bgColor: String, textColor: String, image: String, productCount: Number, featured: Boolean }, { timestamps: true });
 const ProductSchema = new mongoose.Schema({ id: String, name: String, slug: String, category: String, tagline: String, description: String, shortDescription: String, price: Number, priceUnit: String, originalPrice: Number, image: String, images: [String], badge: String, badgeColor: String, rating: Number, reviewCount: Number, featured: Boolean, inStock: Boolean, prescriptionRequired: Boolean, howItWorks: [String], benefits: [String], ingredients: [String], sideEffects: [String], faqs: [{ question: String, answer: String, _id: false }] }, { timestamps: true });
 const TestimonialSchema = new mongoose.Schema({ id: Number, name: String, age: Number, category: String, product: String, rating: Number, quote: String, result: String, avatar: String, avatarColor: String, verified: Boolean }, { timestamps: true });
-const SiteConfigSchema = new mongoose.Schema({ key: { type: String, unique: true }, steps: Array, stats: Array, trustBadges: Array, navigation: Object }, { timestamps: true });
+const SiteConfigSchema = new mongoose.Schema({ key: { type: String, unique: true }, steps: Array, stats: Array, trustBadges: Array, navigation: Object, appearance: Object }, { timestamps: true });
 
 // ─── Seed ─────────────────────────────────────────────────────────────────────
 

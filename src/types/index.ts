@@ -81,6 +81,34 @@ export interface NavCategory {
   slug: string;
 }
 
+export interface SiteLink {
+  label: string;
+  href: string;
+}
+
+export interface AppearanceConfig {
+  logo: {
+    letter: string;
+    primaryText: string;
+    accentText: string;
+  };
+  meta: {
+    title: string;
+    description: string;
+    keywords: string;
+  };
+  header: {
+    ctaLinks: SiteLink[];
+    ctaButton: SiteLink;
+  };
+  footer: {
+    description: string;
+    companyLinks: SiteLink[];
+    supportLinks: SiteLink[];
+    copyright: string;
+  };
+}
+
 export interface SiteConfigData {
   key: string;
   steps: SiteStep[];
@@ -89,4 +117,5 @@ export interface SiteConfigData {
   navigation: {
     categories: NavCategory[];
   };
+  appearance?: AppearanceConfig;
 }
