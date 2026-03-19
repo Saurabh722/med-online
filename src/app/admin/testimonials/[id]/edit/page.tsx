@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import { notFound } from "next/navigation";
 import { connectDB } from "@/lib/mongodb";
 import Testimonial from "@/models/Testimonial";
