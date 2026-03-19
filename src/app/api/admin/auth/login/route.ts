@@ -8,8 +8,8 @@ export async function POST(request: Request) {
   if (
     !username ||
     !password ||
-    username !== process.env.ADMIN_USERNAME ||
-    password !== process.env.ADMIN_PASSWORD
+    username !== process.env.ADMIN_USERNAME?.trim() ||
+    password !== process.env.ADMIN_PASSWORD?.trim()
   ) {
     return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
   }

@@ -28,8 +28,8 @@ export async function middleware(request: NextRequest) {
 }
 
 async function isValidToken(token: string): Promise<boolean> {
-  const secret = process.env.ADMIN_SECRET;
-  const username = process.env.ADMIN_USERNAME;
+  const secret = process.env.ADMIN_SECRET?.trim();
+  const username = process.env.ADMIN_USERNAME?.trim();
   if (!secret || !username) return false;
   try {
     const key = await crypto.subtle.importKey(

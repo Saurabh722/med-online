@@ -14,8 +14,8 @@ export function verifyAdminAuth(request: Request): boolean {
   if (!token) return false;
 
   const expected = generateToken(
-    process.env.ADMIN_USERNAME!,
-    process.env.ADMIN_SECRET!
+    process.env.ADMIN_USERNAME!.trim(),
+    process.env.ADMIN_SECRET!.trim()
   );
   return token === expected;
 }
