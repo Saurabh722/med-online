@@ -1,0 +1,50 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "title": "Complete Online Evaluation",
+      "description": "Answer questions about your health history, symptoms, and goals. Takes about 5 minutes.",
+      "icon": "📋"
+    },
+    {
+      "step": 2,
+      "title": "Physician Review",
+      "description": "A licensed U.S. physician reviews your information and creates a personalized treatment plan.",
+      "icon": "👨‍⚕️"
+    },
+    {
+      "step": 3,
+      "title": "Prescription & Delivery",
+      "description": "Your prescription is sent to a licensed pharmacy and delivered to your door — fast and discreet.",
+      "icon": "📦"
+    },
+    {
+      "step": 4,
+      "title": "Ongoing Support",
+      "description": "Ongoing care, follow-ups, and adjustments as needed — all from the comfort of home.",
+      "icon": "💬"
+    }
+  ],
+  "stats": [
+    { "value": "500K+", "label": "Patients served" },
+    { "value": "4.8/5", "label": "Average rating" },
+    { "value": "48 States", "label": "Licensed in" },
+    { "value": "24hr", "label": "Avg physician response" }
+  ],
+  "trustBadges": [
+    { "title": "Licensed Physicians", "description": "All prescriptions written by U.S.-licensed doctors" },
+    { "title": "FDA-Approved Treatments", "description": "Only evidence-based, approved medications" },
+    { "title": "HIPAA Compliant", "description": "Your health data is always private and secure" },
+    { "title": "Free Shipping", "description": "Discreet delivery to your door, always free" }
+  ],
+  "navigation": {
+    "categories": [
+      { "name": "Weight Loss", "slug": "weight-loss" },
+      { "name": "Men's Health", "slug": "mens-health" },
+      { "name": "Women's Health", "slug": "womens-health" },
+      { "name": "Mental Health", "slug": "mental-health" },
+      { "name": "Skincare", "slug": "skincare" },
+      { "name": "Sleep", "slug": "sleep" }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah M.",
+    "age": 38,
+    "category": "weight-loss",
+    "product": "Wegovy",
+    "rating": 5,
+    "quote": "I lost 42 pounds in 6 months. For the first time in years, I feel confident and energetic. The process was so easy — everything was done online.",
+    "result": "Lost 42 lbs in 6 months",
+    "avatar": "SM",
+    "avatarColor": "bg-emerald-500",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "James T.",
+    "age": 45,
+    "category": "mens-health",
+    "product": "Sildenafil",
+    "rating": 5,
+    "quote": "I was embarrassed to talk about ED with my regular doctor. Being able to do this online, privately, changed my life and my marriage.",
+    "result": "Restored confidence",
+    "avatar": "JT",
+    "avatarColor": "bg-blue-500",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "name": "Rachel K.",
+    "age": 52,
+    "category": "womens-health",
+    "product": "Menopause HRT",
+    "rating": 5,
+    "quote": "The hot flashes were unbearable. Within 3 weeks of starting HRT, they were almost gone. I wish I had done this sooner.",
+    "result": "Hot flashes reduced 80%",
+    "avatar": "RK",
+    "avatarColor": "bg-rose-500",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "name": "David L.",
+    "age": 34,
+    "category": "mens-health",
+    "product": "Finasteride",
+    "rating": 4,
+    "quote": "I started noticing thinning hair at 30. After 8 months on finasteride, my hairline has visibly improved and the shedding completely stopped.",
+    "result": "Stopped hair loss · Regrowth visible",
+    "avatar": "DL",
+    "avatarColor": "bg-indigo-500",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "name": "Priya N.",
+    "age": 29,
+    "category": "skincare",
+    "product": "Tretinoin",
+    "rating": 5,
+    "quote": "My skin has never looked better. The tretinoin cleared my acne and my hyperpigmentation has faded so much. The online derm visit was super easy.",
+    "result": "Clear skin in 10 weeks",
+    "avatar": "PN",
+    "avatarColor": "bg-amber-500",
+    "verified": true
+  },
+  {
+    "id": 6,
+    "name": "Mark B.",
+    "age": 41,
+    "category": "mental-health",
+    "product": "Anxiety SSRI",
+    "rating": 5,
+    "quote": "Getting a prescription for sertraline online was seamless. The clinician was thorough and the follow-ups have been great. My anxiety is so much more manageable.",
+    "result": "Significant anxiety reduction",
+    "avatar": "MB",
+    "avatarColor": "bg-purple-500",
+    "verified": true
+  }
+]

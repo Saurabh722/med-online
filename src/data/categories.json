@@ -1,0 +1,80 @@
+[
+  {
+    "id": "weight-loss",
+    "name": "Weight Loss",
+    "slug": "weight-loss",
+    "description": "Science-backed treatments to help you reach and maintain a healthy weight.",
+    "icon": "⚖️",
+    "color": "from-emerald-500 to-teal-600",
+    "bgColor": "bg-emerald-50",
+    "textColor": "text-emerald-700",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
+    "productCount": 6,
+    "featured": true
+  },
+  {
+    "id": "mens-health",
+    "name": "Men's Health",
+    "slug": "mens-health",
+    "description": "Treatments for erectile dysfunction, hair loss, testosterone, and more.",
+    "icon": "💪",
+    "color": "from-blue-500 to-indigo-600",
+    "bgColor": "bg-blue-50",
+    "textColor": "text-blue-700",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80",
+    "productCount": 8,
+    "featured": true
+  },
+  {
+    "id": "womens-health",
+    "name": "Women's Health",
+    "slug": "womens-health",
+    "description": "Personalized care for fertility, menopause, skin, and hormonal health.",
+    "icon": "🌸",
+    "color": "from-rose-500 to-pink-600",
+    "bgColor": "bg-rose-50",
+    "textColor": "text-rose-700",
+    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80",
+    "productCount": 7,
+    "featured": true
+  },
+  {
+    "id": "mental-health",
+    "name": "Mental Health",
+    "slug": "mental-health",
+    "description": "Online therapy, anxiety management, and depression treatment plans.",
+    "icon": "🧠",
+    "color": "from-purple-500 to-violet-600",
+    "bgColor": "bg-purple-50",
+    "textColor": "text-purple-700",
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80",
+    "productCount": 5,
+    "featured": true
+  },
+  {
+    "id": "skincare",
+    "name": "Skincare",
+    "slug": "skincare",
+    "description": "Prescription-strength treatments for acne, aging, and hyperpigmentation.",
+    "icon": "✨",
+    "color": "from-amber-500 to-orange-600",
+    "bgColor": "bg-amber-50",
+    "textColor": "text-amber-700",
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&q=80",
+    "productCount": 9,
+    "featured": false
+  },
+  {
+    "id": "sleep",
+    "name": "Sleep",
+    "slug": "sleep",
+    "description": "Treatments to help you fall asleep faster and wake up refreshed.",
+    "icon": "😴",
+    "color": "from-slate-500 to-gray-600",
+    "bgColor": "bg-slate-50",
+    "textColor": "text-slate-700",
+    "image": "https://images.unsplash.com/photo-1531353826977-0941b4779a1c?w=600&q=80",
+    "productCount": 4,
+    "featured": false
+  }
+]
